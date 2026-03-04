@@ -1,0 +1,28 @@
+{
+  "name": "cse341-web-services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carlosjunc0/CSE341-Web-Services.git"
+  },
+  "keywords": [],
+  "author": "Carlos Junco",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Carlosjunc0/CSE341-Web-Services/issues"
+  },
+  "homepage": "https://github.com/Carlosjunc0/CSE341-Web-Services#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
