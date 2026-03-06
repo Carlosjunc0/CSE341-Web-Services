@@ -1,0 +1,13 @@
+//LOCALHOST:3000/contacts
+### GET ALL CONTACTS
+GET http://localhost:3000/contacts
+
+### GET CONTACT BY ID
+GET http://localhost:3000/contacts/69aa6866ad395910dd72416d
+
+//PRODUCTION URL: https://cse341-web-services.onrender.com/contacts
+### GET ALL CONTACTS
+GET https://cse341-web-services.onrender.com/contacts
+
+### GET CONTACT BY ID
+GET https://cse341-web-services.onrender.com/contacts/69aa6866ad395910dd72416d

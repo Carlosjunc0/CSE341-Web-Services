@@ -1,14 +1,19 @@
+const dotenv = require('dotenv');
+dotenv.config();
 const express = require('express');
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 3000;
+const mongodb = require('./data/database');
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+app.use('/', require('./routes'));
+
+mongodb.initDb((err) => {
+  if (err) {
+    console.log(err);
+  }
+  else {
+    app.listen(port, () => {
+      console.log(`Database is listening and node running on port ${port}`);
+    });
+  }
 });
-
-app.get('/endpoint', (req, res) => {
-  res.send('This is an endpoint!');
-});
-
-app.listen(process.env.PORT || port,);
-console.log('Web server is listening at port ' + (process.env.PORT || port));
