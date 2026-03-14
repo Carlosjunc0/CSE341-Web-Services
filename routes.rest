@@ -4,10 +4,35 @@ GET http://localhost:3000/contacts
 
 ### GET CONTACT BY ID
 GET http://localhost:3000/contacts/69aa6866ad395910dd72416d
+### data {"_id":"69aa6866ad395910dd72416d","firstName":"Hanna","lastName":"Moon","email":"hamoon@gmail.com","favoriteColor":"red","birthday":"09/21/2000"}
 
-//PRODUCTION URL: https://cse341-web-services.onrender.com/contacts
+
+#### CREATE CONTACT
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Emily",
+  "lastName": "Brown",
+  "email": "emily.brown@yahoo.com",
+  "favoriteColor": "pink",
+  "birthday": "18/09/1995"
+}
+
+#### UPDATE CONTACT
+PUT http://localhost:3000/contacts/69b4ee73bea99feacbe954b1
+Content-Type: application/json
+
+{
+  "email": "john.doe@google.com"
+}
+
+#### DELETE CONTACT
+DELETE http://localhost:3000/contacts/69b4edfa8051f64981588463
+
+//PRODUCTION URL: https://cse341-web-services-zvlr.onrender.com
 ### GET ALL CONTACTS
-GET https://cse341-web-services.onrender.com/contacts
+GET https://cse341-web-services-zvlr.onrender.com/contacts
 
 ### GET CONTACT BY ID
-GET https://cse341-web-services.onrender.com/contacts/69aa6866ad395910dd72416d
+GET https://cse341-web-services-zvlr.onrender.com/contacts/69aa6866ad395910dd72416d
