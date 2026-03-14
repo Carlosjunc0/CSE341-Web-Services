@@ -12,11 +12,11 @@ POST http://localhost:3000/contacts
 Content-Type: application/json
 
 {
-  "firstName": "Emily",
-  "lastName": "Brown",
-  "email": "emily.brown@yahoo.com",
-  "favoriteColor": "pink",
-  "birthday": "18/09/1995"
+  "firstName": "Joahn",
+  "lastName": "Garcia",
+  "email": "joahn.garcia@apple.com",
+  "favoriteColor": "green",
+  "birthday": "08/03/1996"
 }
 
 #### UPDATE CONTACT
@@ -24,15 +24,47 @@ PUT http://localhost:3000/contacts/69b4ee73bea99feacbe954b1
 Content-Type: application/json
 
 {
-  "email": "john.doe@google.com"
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@google.com",
+  "favoriteColor": "orange",
+  "birthday": "01/06/1997"
 }
 
 #### DELETE CONTACT
-DELETE http://localhost:3000/contacts/69b4edfa8051f64981588463
+DELETE http://localhost:3000/contacts/69b5b33da75a24048e2b65fb
 
-//PRODUCTION URL: https://cse341-web-services-zvlr.onrender.com
+// --------------------------------------------------------------------------------
+// PRODUCTION URL: https://cse341-web-services-zvlr.onrender.com
 ### GET ALL CONTACTS
 GET https://cse341-web-services-zvlr.onrender.com/contacts
 
 ### GET CONTACT BY ID
 GET https://cse341-web-services-zvlr.onrender.com/contacts/69aa6866ad395910dd72416d
+
+#### CREATE CONTACT
+POST https://cse341-web-services-zvlr.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Yuri",
+  "lastName": "Mendez",
+  "email": "yuri.mendez@yahoo.com",
+  "favoriteColor": "black",
+  "birthday": "24/12/1999"
+}
+
+#### UPDATE CONTACT
+PUT https://cse341-web-services-zvlr.onrender.com/contacts/69b4ee73bea99feacbe954b1
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@google.com",
+  "favoriteColor": "black",
+  "birthday": "01/06/1997"
+}
+
+#### DELETE CONTACT
+DELETE https://cse341-web-services-zvlr.onrender.com/contacts/69aa676aad395910dd72416a
