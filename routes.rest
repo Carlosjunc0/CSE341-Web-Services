@@ -55,16 +55,16 @@ Content-Type: application/json
 }
 
 #### UPDATE CONTACT
-PUT https://cse341-web-services-zvlr.onrender.com/contacts/69b4ee73bea99feacbe954b1
+PUT https://cse341-web-services-zvlr.onrender.com/contacts/69b5bcb0eaceb875add9b63f
 Content-Type: application/json
 
 {
-  "firstName": "John",
-  "lastName": "Doe",
-  "email": "john.doe@google.com",
+  "firstName": "Carlos",
+  "lastName": "Mendez",
+  "email": "carlos.mendez@gmail.com",
   "favoriteColor": "black",
-  "birthday": "01/06/1997"
+  "birthday": "24/12/1999"
 }
 
 #### DELETE CONTACT
-DELETE https://cse341-web-services-zvlr.onrender.com/contacts/69aa676aad395910dd72416a
+DELETE https://cse341-web-services-zvlr.onrender.com/contacts/69b5bcb0eaceb875add9b63f

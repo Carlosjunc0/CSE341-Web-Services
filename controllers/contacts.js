@@ -6,6 +6,7 @@ const DATABASE_NAME = 'Project';
 const COLLECTION_NAME = 'Contacts';
 
 const getAllContacts = async (req, res) => {
+    //#swagger.tags = ['Contacts']
     try {
         const client = getDb();
         const db = client.db(DATABASE_NAME);
@@ -22,6 +23,7 @@ const getAllContacts = async (req, res) => {
 };
 
 const getContactById = async (req, res) => {
+    //#swagger.tags = ['Contacts']
     try {
         const contactId = req.params.id;
         if (!ObjectId.isValid(contactId)) {
@@ -52,6 +54,7 @@ const getContactById = async (req, res) => {
 };
 
 const createContact = async (req, res) => {
+    //#swagger.tags = ['Contacts']
     const { firstName, lastName, email, favoriteColor, birthday } = req.body;
     if (!firstName || !lastName || !email || !favoriteColor || !birthday) {
         return res.status(400).json({ error: 'All fields are required' });
@@ -74,6 +77,7 @@ const createContact = async (req, res) => {
 };
 
 const updateContact = async (req, res) => {
+    //#swagger.tags = ['Contacts']
   const { firstName, lastName, email, favoriteColor, birthday } = req.body;
   const contactId = req.params.id;
 
@@ -115,6 +119,7 @@ const updateContact = async (req, res) => {
 };
 
 const deleteContact = async (req, res) => {
+    //#swagger.tags = ['Contacts']
     const contactId = req.params.id;
 
     if (!ObjectId.isValid(contactId)) {
